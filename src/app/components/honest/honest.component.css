@@ -8,4 +8,4 @@
 }
 .info-row:last-child { border-bottom: none; }
 .info-label { font-size: 12px; font-weight: 400; color: var(--light-text-tertiary); white-space: nowrap; min-width: 120px; }
-.info-value  { font-size: 14px; font-weight: 400; color: var(--light-text-primary); text-align: right; }
+.info-value  { font-size: 14px; font-weight: 400; color: var(--light-text-tertiary); text-align: right; }
