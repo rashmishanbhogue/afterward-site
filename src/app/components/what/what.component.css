@@ -1,0 +1,43 @@
+.what-text{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--light-text-secondary);
+}
+
+.what-text strong {
+    font-weight: 600;
+    color: var(--mist-sage-dark);
+}
+
+.principles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.principle-card {
+    background: var(--light-surface-alt);
+    border: 1px solid var(--light-border);
+    border-radius: var(--radius-sm);
+    padding: 20px 22px;
+}
+
+.principle-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--mist-sage-dark);
+    margin-bottom: 5px;
+}
+
+.principle-body{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--light-text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 560px){
+    .principles {grid-template-columns: 1fr;}
+}

@@ -1,0 +1,11 @@
+.info-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--light-border);
+  gap: 16px;
+}
+.info-row:last-child { border-bottom: none; }
+.info-label { font-size: 12px; font-weight: 400; color: var(--light-text-tertiary); white-space: nowrap; min-width: 120px; }
+.info-value  { font-size: 14px; font-weight: 400; color: var(--light-text-primary); text-align: right; }

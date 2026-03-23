@@ -1,0 +1,19 @@
+footer {
+  text-align: center;
+  padding: 48px 24px;
+  border-top: 1px solid var(--light-border);
+  color: var(--light-text-tertiary);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  position: relative;
+  z-index: 1;
+}
+.footer-mark {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--mist-sage);
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}

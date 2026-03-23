@@ -1,0 +1,80 @@
+.hero {
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px 60px;
+    position: relative;
+    z-index: 1s;
+}
+
+.hero-mark {
+    font-size: 96px;
+    font-weight: 300;
+    color: var(--mist-sage);
+    letter-spacing: 4px;
+    line-height: 1;
+    margin-bottom: 28px;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.7s ease forwards 0.1s;
+}
+
+.hero-name {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--light-text-tertiary);
+    text-transform: lowercase;
+    margin-bottom: 36px;
+    opacity: 0;
+    animation: fadeUp 0.7s ease forwards 0.25s;
+}
+
+.hero-tagline {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--light-text-secondary);
+    max-width: 480px;
+    line-height: 1.65;
+    margin-bottom: 16px;
+    opacity: 0;
+    animation: fadeUp 0.7s ease forwards 0.4s;
+}
+
+.hero-sub {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light-text-tertiary);
+    letter-spacing: 0.2px;
+    opacity: 0;
+    animation: fadeUp 0.7s ease forwards 0.55s;
+    margin-bottom: 52px;
+}
+
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeUp 0.7s ease forwards 0.65s;
+}
+
+.fact-chip {
+    padding: 7px 16px;
+    background: var(--light-surface);
+    border: 1px solid var(--light-border);
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--light-text-secondary);
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 560px) {
+    .hero-mark {font-size: 72px;}
+    .hero-tagline {font-size: 18px;}
+}

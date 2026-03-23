@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --light-bg: #F5F8F6;
+    --light-surface: #FFFFFF;
+    --light-surface-alt: #EEF4F1;
+    --light-border: #DDE8E4;
+    --light-text-primary: #181D1B;
+    --light-text-secondary: #5E6F6B;
+    --light-text-tertiary: #8FA8A2;
+    --mist-sage: #7AA899;
+    --mist-sage-light: #E4F0ED;
+    --mist-sage-dark: #4E7D6F;
+    --moss-bg: #141C15;
+    --moss-surface: #1C271E;
+    --moss-border: #2A3A2C;
+    --moss-text-primary: #D8EAE0;
+    --moss-text-secondary: #6A9278;
+    --moss-accent: #6E9E86;
+    --font: 'Plus Jakarta Sans', sans-serif;
+    --radius: 16px;
+    --radius-sm: 10px;
+}
+
+*, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
+
+html { scroll-behavior: smooth;}
+
+body {
+    font-family: var(--font);
+    background: var(--light-bg);
+    color: var(--light-text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(circle, var(--light-border) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.55;
+    pointer-events: none;
+    z-index: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--light-border);
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-label{
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--light-text-tertiary);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.card {
+    background: var(--light-surface);
+    border: 1px solid var(--light-border);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    margin-bottom: 12px;
+}
+
+@keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

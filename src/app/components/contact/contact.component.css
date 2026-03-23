@@ -1,0 +1,93 @@
+.contact-intro { font-size: 14px; color: var(--light-text-secondary); line-height: 1.7; margin-bottom: 16px; }
+.contact-link {
+  display: inline-block;
+  color: var(--mist-sage-dark);
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--mist-sage);
+  padding-bottom: 1px;
+  transition: color 0.2s;
+}
+.contact-link:hover { color: var(--mist-sage); }
+.follow-section { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--light-border); }
+.follow-label { font-size: 13px; color: var(--light-text-tertiary); margin-bottom: 14px; }
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: var(--mist-sage-light);
+  border: 1px solid var(--light-border);
+  border-radius: 99px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--mist-sage-dark);
+  transition: background 0.2s;
+  margin-right: 12px;
+}
+.instagram-link:hover { background: var(--light-border); }
+.reddit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: var(--mist-sage-light);
+  border: 1px solid var(--light-border);
+  border-radius: 99px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--mist-sage-dark);
+  transition: background 0.2s;
+}
+.reddit-link:hover { background: var(--light-border); }
+.kofi-section { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--light-border); }
+.kofi-label { font-size: 13px; color: var(--light-text-tertiary); margin-bottom: 14px; }
+.kofi-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: var(--mist-sage-light);
+  border: 1px solid var(--light-border);
+  border-radius: 99px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--mist-sage-dark);
+  transition: background 0.2s;
+}
+.kofi-link:hover { background: var(--light-border); }
+
+.instagram-link svg,
+.instagram-link img,
+.reddit-link svg,
+.reddit-link img,
+.kofi-link svg,
+.kofi-link img {
+  width: 18px;
+  height: 18px;
+}
+.reddit-link svg path,
+.instagram-link svg path,
+.kofi-link svg path {
+  fill: currentColor !important;
+}
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 16px;
+    fill: currentColor;
+  color: var(--mist-sage-dark);
+}
+
+.contact-link {
+  text-decoration: none;
+}
+

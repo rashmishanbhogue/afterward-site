@@ -1,0 +1,62 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 48px;
+    position: sticky;
+    top: 0;
+    background: rgba(245, 248, 246, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--light-border);
+    z-index: 100;
+}
+
+.nav-mark{
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--mist-sage);
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: var(--light-text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {color: var(--mist-sage-dark);}
+
+.kofi-btn {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 18px;
+    background: var(--mist-sage-light);
+    color: var(--mist-sage-dark) !important;
+    border-radius: 99px;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    transition: background 0.2s, transform 0.15s !important;
+}
+
+.kofi-btn:hover{
+    background: var(--light-border) !important;
+    transform: translateY(-1px);
+}
+
+@media(max-width: 560px){
+    nav {padding: 16px 20px;}
+    .nav-links {gap: 16px;}
+}

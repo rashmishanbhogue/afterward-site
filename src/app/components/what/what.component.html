@@ -1,0 +1,22 @@
+<section id="what">
+    <p class="section-label fade-in" #fadeEl>what it is</p>
+
+    <div class="card fade-in" #fadeEl>
+        <p class="what-text">
+            most apps tell you what to do next. afterward works the other way around - you open it <strong>after</strong> you've done something, type whatever you did, and that's it. no format required. no daily streak. no reminders asking where you've been.
+        </p>
+    </div>
+
+    <div class="card fade-in" #fadeEl>
+        <p class="what-text">
+            built for people who are <strong>neurodivergent, easily overwhelmed,</strong> or just done with the apps that make them feel behind. the language is calm. the design is quiet. it works when you do, and waits when you don't.
+        </p>
+    </div>
+
+<div class="principles">
+        <div class="principle-card fade-in" #fadeEl *ngFor="let p of principles">
+            <div class="principle-title">{{p.title}}</div>
+            <div class="principle-body">{{p.body}}</div>
+        </div>
+    </div>
+</section>

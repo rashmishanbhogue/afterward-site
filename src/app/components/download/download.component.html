@@ -1,0 +1,15 @@
+<section id="get">
+    <p class="section-label">get it</p> 
+    <div class="download-grid">
+        <div class="platform-row" *ngFor="let p of platforms">
+            <div class="platform-left">
+                <div class="platform-icon">{{p.icon}}</div>
+                <div>
+                    <div class="platform-name">{{p.name}}</div>
+                    <div class="platform-sub">{{p.sub}}</div>
+                </div>
+            </div>
+            <span class="platform-badge badge-soon">coming soon</span>
+        </div>
+    </div>
+</section>
