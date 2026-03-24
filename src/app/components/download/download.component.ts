@@ -10,13 +10,6 @@ import { NgFor } from '@angular/common';
 })
 export class DownloadComponent implements AfterViewInit{
   @ViewChildren('fadeEl') fadeElements!: QueryList<ElementRef>;
-platforms =[
-  {name: 'Android', sub: 'phone',   icon: '📱'},
-  {name: 'iOS',     sub: 'iPhone',  icon: '🍎'},
-  {name: 'macOS',   sub: 'desktop', icon: '🖥'},
-  {name: 'Windows', sub: 'desktop', icon: '🪟'},
-  {name: 'Linux',   sub: 'desktop', icon: '🐧'},
-];
 
 ngAfterViewInit():void{
   const observer = new IntersectionObserver((entries)=>{

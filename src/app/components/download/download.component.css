@@ -1,24 +1,68 @@
-.download-grid {display: flex; flex-direction: column; gap: 10px;}
-.platform-row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 24px;
-    background: var(--light-surface);
-    border: 1px solid var(--light-border);
-    border-radius: var(--radius-sm);
-    opacity: 0.65;
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
 }
-.platform-left{display: flex; align-items: center; gap: 14px;}
-.platform-icon{
-    width: 36px; height: 36px;
-    background: var(--light-surface-alt);
-    border: 1px solid var(--light-border);
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 16px;
+
+.dl-card {
+  background: var(--light-surface);
+  border: 1px solid var(--light-border);
+  border-radius: var(--radius);
+  padding: 28px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
 }
-.platform-name {font-size: 14px; font-weight: 600; color: var(--mist-sage-dark);}
-.platform-sub {font-size: 11px; font-weight: 400; color: var(--light-text-tertiary); margin-top: 2px;} 
-.platform-badge {font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 99px; letter-spacing: 0.3px;}
-.badge-soon {background: var(--light-surface-alt); color: var(--light-text-tertiary); border: 1px solid var(--light-border);}
+
+.dl-icon svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--mist-sage-dark);
+  display: block;
+}
+
+.dl-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--light-text-primary);
+}
+
+.dl-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.dl-link {
+  font-size: 12px;
+  color: var(--mist-sage-dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--mist-sage);
+  padding-bottom: 1px;
+  transition: color 0.2s;
+}
+
+.dl-link:hover { color: var(--mist-sage); }
+
+.dl-divider {
+  width: 1px;
+  height: 12px;
+  background: var(--mist-sage);
+}
+
+.dl-soon {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--light-text-tertiary);
+  background: var(--light-surface-alt);
+  border: 1px solid var(--light-border);
+  border-radius: 99px;
+  padding: 3px 12px;
+}
+
+@media (max-width: 480px) {
+  .download-grid { grid-template-columns: 1fr; }
+}
