@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { NgFor } from '@angular/common';
 
 @Component({
@@ -8,7 +8,8 @@ import { NgFor } from '@angular/common';
   templateUrl: './download.component.html',
   styleUrl: './download.component.css'
 })
-export class DownloadComponent {
+export class DownloadComponent implements AfterViewInit{
+  @ViewChildren('fadeEl') fadeElements!: QueryList<ElementRef>;
 platforms =[
   {name: 'Android', sub: 'phone',   icon: '📱'},
   {name: 'iOS',     sub: 'iPhone',  icon: '🍎'},
@@ -16,4 +17,16 @@ platforms =[
   {name: 'Windows', sub: 'desktop', icon: '🪟'},
   {name: 'Linux',   sub: 'desktop', icon: '🐧'},
 ];
+
+ngAfterViewInit():void{
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry =>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },{threshold: 0.12});
+  this.fadeElements.forEach(el=> observer.observe(el.nativeElement));
+}
 }
