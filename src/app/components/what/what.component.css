@@ -1,5 +1,5 @@
 .what-text{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.75;
     color: var(--light-text-secondary);
@@ -10,7 +10,7 @@
     color: var(--mist-sage-dark);
 }
 
-.principles {
+/* .principles {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
@@ -40,4 +40,4 @@
 
 @media (max-width: 560px){
     .principles {grid-template-columns: 1fr;}
-}
+} */
