@@ -10,6 +10,10 @@
     color: var(--mist-sage-dark);
 }
 
+#what .card + .card {
+  margin-top: 20px;
+}
+
 /* .principles {
     display: grid;
     grid-template-columns: 1fr 1fr;
