@@ -9,6 +9,7 @@ footer {
   position: relative;
   z-index: 1;
 }
+
 .footer-mark {
   font-size: 20px;
   font-weight: 300;
@@ -16,4 +17,26 @@ footer {
   letter-spacing: 2px;
   display: block;
   margin-bottom: 10px;
+}
+
+.footer-links {
+  margin-top: 14px;
+  font-size: 11px;
+}
+
+.footer-links a {
+  color: var(--light-text-secondary);
+  text-decoration: underline;
+  text-decoration-color: var(--mist-sage);
+  text-underline-offset: 3px;
+}
+
+.footer-links a:hover {
+  color: var(--mist-sage);
+}
+
+.footer-links a:focus-visible {
+  outline: 2px solid var(--mist-sage);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
