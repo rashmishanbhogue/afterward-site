@@ -1,27 +1,32 @@
-# AfterwardSite
+# afterward — website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+The website for **afterward**, a done list for the rest of us.
 
-## Development server
+afterward is a personal activity log for recording the things that make up a day, collecting thoughts along the way, and looking back without the pressure of productivity targets or unfinished tasks.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This repository contains the website that introduces the app, its ideas and its approach to privacy. It's the public-facing companion to the afterward application.
 
-## Code scaffolding
+## The website
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**[getafterward.app](https://getafterward.app/)**
 
-## Build
+A little more about the thinking behind afterward, what it offers, and why it exists.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## About the app
 
-## Running unit tests
+afterward brings together a personal activity log, a space for unfiltered thoughts, and a way to revisit your days.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+No account. No cloud dependency. No pressure to keep up.
 
-## Running end-to-end tests
+## Links
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Website:** https://getafterward.app/
+- **Privacy policy:** https://getafterward.app/privacy-policy
+- **Contact:** [getafterwardapp@gmail.com](mailto:getafterwardapp@gmail.com)
+- **App repository:** [rashmishanbhogue/afterward](https://github.com/rashmishanbhogue/afterward)
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+A small corner of the internet for afterward.
+
+**afterward**
