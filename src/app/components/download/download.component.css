@@ -66,3 +66,29 @@
 @media (max-width: 480px) {
   .download-grid { grid-template-columns: 1fr; }
 }
+
+.dl-download {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--mist-sage-dark);
+  text-decoration: none;
+  border: 1px solid var(--mist-sage-dark);
+  border-radius: 99px;
+  padding: 7px 20px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.dl-download:hover {
+  background: var(--mist-sage);
+  border-color: var(--mist-sage);
+}
+
+.download-note {
+  margin-top: 20px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--light-text-tertiary);
+  text-align: center;
+}
